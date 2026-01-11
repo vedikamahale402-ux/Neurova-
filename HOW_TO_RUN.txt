@@ -1,0 +1,224 @@
+╔════════════════════════════════════════════════════════════════╗
+║                                                                ║
+║          🧠 STROKEAWARE - HOW TO RUN (Simple Guide)           ║
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+📋 WHAT YOU HAVE:
+
+✅ A complete website built with HTML, CSS, and JavaScript
+✅ NO installation needed
+✅ NO frameworks or libraries
+✅ Works in ANY modern web browser
+✅ Just open and run!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 METHOD 1: DOUBLE-CLICK (EASIEST!)
+
+1. Find the file called: index.html
+2. Double-click it
+3. It opens in your web browser
+4. DONE! 🎉
+
+That's it! The website is now running!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 METHOD 2: RIGHT-CLICK (Alternative)
+
+1. Find the file: index.html
+2. Right-click on it
+3. Choose "Open with"
+4. Select your web browser (Chrome, Firefox, Safari, Edge)
+5. DONE! 🎉
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 FILE STRUCTURE (Keep These Together):
+
+strokeaware-education-platform/
+│
+├── index.html          ← Main file (open this!)
+│
+├── styles/             ← CSS files (styling)
+│   ├── main.css
+│   ├── components.css
+│   ├── animations.css
+│   └── responsive.css
+│
+└── scripts/            ← JavaScript files (functionality)
+    ├── data.js
+    └── main.js
+
+⚠️ IMPORTANT: Keep all files in their folders!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ WHAT SHOULD WORK:
+
+✓ Header navigation
+✓ Mobile menu (on small screens)
+✓ Email signup form
+✓ Video carousel (scroll with arrows)
+✓ Category cards
+✓ Progress tracking
+✓ Testimonial rotation (auto-changes every 5 seconds)
+✓ Sign-in modal (click "Sign In" button)
+✓ All hover effects
+✓ Smooth scrolling
+✓ Animations
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌐 BROWSER REQUIREMENTS:
+
+✅ Google Chrome (version 90+)
+✅ Mozilla Firefox (version 88+)
+✅ Microsoft Edge (version 90+)
+✅ Safari (version 14+)
+✅ Opera (version 76+)
+❌ Internet Explorer (NOT supported)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📱 TESTING ON MOBILE:
+
+Option 1: Copy to your phone
+1. Copy the entire folder to your phone
+2. Use a file manager to find index.html
+3. Tap to open in browser
+
+Option 2: Use browser tools (on desktop)
+1. Open the website
+2. Press F12 (or Fn+F12)
+3. Click the phone/tablet icon
+4. Select a device to simulate
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🐛 TROUBLESHOOTING:
+
+Problem: Website looks broken
+Solution: 
+  - Make sure all files are in correct folders
+  - Don't move files out of their folders
+  - Check internet connection (images load from online)
+
+Problem: Nothing happens when I click
+Solution:
+  - Try a different browser
+  - Press Ctrl+Shift+R (or Cmd+Shift+R) to reload
+  - Check browser console (F12) for errors
+
+Problem: Images not loading
+Solution:
+  - Check internet connection
+  - Images load from Unsplash (needs internet)
+
+Problem: Styles not working
+Solution:
+  - Make sure styles/ folder is next to index.html
+  - Don't rename any folders
+  - Clear browser cache (Ctrl+Shift+Delete)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎨 CUSTOMIZATION:
+
+Want to change colors?
+→ Edit: styles/main.css
+
+Want to change content?
+→ Edit: scripts/data.js
+
+Want to add new sections?
+→ Edit: index.html
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌐 PUTTING IT ONLINE:
+
+Method 1: Netlify Drop (EASIEST)
+1. Go to: https://app.netlify.com/drop
+2. Drag the entire folder
+3. Get a live URL instantly!
+
+Method 2: GitHub Pages
+1. Create account at github.com
+2. Create new repository
+3. Upload all files
+4. Enable GitHub Pages in settings
+
+Method 3: Any web hosting
+- Upload all files to your hosting
+- Make sure index.html is in root
+- Keep folder structure intact
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💻 FOR DEVELOPERS:
+
+VS Code + Live Server Extension:
+1. Install VS Code
+2. Install "Live Server" extension
+3. Right-click index.html
+4. Click "Open with Live Server"
+5. Auto-reloads when you save changes!
+
+Python Simple Server:
+python -m http.server 8000
+Then open: http://localhost:8000
+
+Node.js http-server:
+npx http-server
+Then open: http://localhost:8080
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 WHAT YOU CAN LEARN:
+
+✓ HTML structure
+✓ CSS styling & animations
+✓ JavaScript DOM manipulation
+✓ Responsive design
+✓ CSS Grid & Flexbox
+✓ Event handling
+✓ Modern web development
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ QUICK START CHECKLIST:
+
+□ Extracted all files
+□ Found index.html
+□ Opened in web browser
+□ Website loads successfully
+□ Tested on mobile (optional)
+□ Customized (optional)
+□ Deployed online (optional)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 SUMMARY:
+
+1. Open index.html in any modern web browser
+2. That's it!
+
+No installation, no setup, no configuration.
+Just pure HTML, CSS, and JavaScript.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📧 QUESTIONS?
+
+Read the README.md file for more detailed information.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Happy Learning! 🎓🚀
+
+Built with ❤️ for medical education
+100% Pure HTML, CSS, and JavaScript - No Frameworks!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrokeAware - Brain Stroke Education for Medical Students</title>
+    <meta name="description" content="Comprehensive stroke awareness education platform for medical students. Learn to recognize and respond to stroke emergencies.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-text">StrokeAware</span>
+                </div>
+                <nav class="nav" id="nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#courses" class="nav-link">Courses</a>
+                    <a href="#categories" class="nav-link">Categories</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </nav>
+                <button class="btn-signin" id="btnSignIn">Sign In</button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-image"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Learn to Save Lives</h1>
+                <p class="hero-subtitle">Master stroke recognition and emergency response with our comprehensive medical education platform</p>
+                <div class="email-signup">
+                    <input type="email" placeholder="Enter your email" class="email-input" id="emailInput">
+                    <button class="btn-primary" id="btnGetStarted">Get Started</button>
+                </div>
+                <p class="hero-text">Join 5,000+ medical students advancing their stroke education</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curve Separator -->
+    <div class="curve-separator">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="curveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#9333ea;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#7c3aed;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <path d="M0,60 C240,90 480,90 720,60 C960,30 1200,30 1440,60 L1440,0 L0,0 Z" fill="url(#curveGradient)"></path>
+        </svg>
+    </div>
+
+    <!-- Featured Video Section -->
+    <section class="featured-video" id="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Course</h2>
+            <div class="video-container">
+                <div class="video-player" id="videoPlayer">
+                    <img src="https://images.unsplash.com/photo-1767378262839-9d615a266ad3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1920" alt="Featured Course" class="video-poster" id="videoPoster">
+                    <div class="video-overlay">
+                        <div class="video-content">
+                            <span class="badge">New Course</span>
+                            <h3 class="video-title">Complete Guide to Ischemic Stroke</h3>
+                            <p class="video-description">Master the latest protocols in ischemic stroke diagnosis and treatment. Learn from world-renowned neurologists.</p>
+                            <div class="video-buttons">
+                                <button class="btn-play" id="btnPlay">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                    Play Course
+                                </button>
+                                <button class="btn-info" id="btnInfo">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <line x1="12" y1="16" x2="12" y2="12"/>
+                                        <line x1="12" y1="8" x2="12.01" y2="8"/>
+                                    </svg>
+                                    More Info
+                                </button>
+                            </div>
+                            <div class="video-meta">
+                                <span class="meta-item highlight">98% Match</span>
+                                <span class="meta-item">2024</span>
+                                <span class="meta-item border">HD</span>
+                                <span class="meta-item">12 Modules</span>
+                                <span class="meta-item">8 Hours</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-info" id="videoInfo" style="display: none;">
+                    <div class="info-header">
+                        <h4>About this Course</h4>
+                        <button class="btn-close-info" id="btnCloseInfo">×</button>
+                    </div>
+                    <div class="info-content">
+                        <div class="info-column">
+                            <h5>What You'll Learn</h5>
+                            <ul>
+                                <li>Advanced imaging interpretation</li>
+                                <li>Thrombolytic therapy protocols</li>
+                                <li>Endovascular treatment options</li>
+                                <li>Post-stroke care management</li>
+                            </ul>
+                        </div>
+                        <div class="info-column">
+                            <h5>Course Details</h5>
+                            <ul>
+                                <li><strong>Instructor:</strong> Dr. Sarah Martinez, MD</li>
+                                <li><strong>Level:</strong> Intermediate</li>
+                                <li><strong>Certification:</strong> Yes</li>
+                                <li><strong>Language:</strong> English</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section class="trending" id="courses">
+        <div class="container">
+            <h2 class="section-title">Trending Now</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" id="btnPrev">‹</button>
+                <div class="carousel" id="carousel">
+                    <!-- Video Cards will be inserted here by JavaScript -->
+                </div>
+                <button class="carousel-btn next" id="btnNext">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Browse by Category</h2>
+            <p class="section-subtitle">Explore our comprehensive stroke education library</p>
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Categories will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Dashboard -->
+    <section class="progress-dashboard">
+        <div class="container">
+            <h2 class="section-title">Your Progress</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-value">12</div>
+                    <div class="stat-label">Courses Enrolled</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-value">8</div>
+                    <div class="stat-label">Certificates Earned</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⏱️</div>
+                    <div class="stat-value">47</div>
+                    <div class="stat-label">Hours Watched</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🔥</div>
+                    <div class="stat-value">15</div>
+                    <div class="stat-label">Day Streak</div>
+                </div>
+            </div>
+            <div class="progress-courses">
+                <h3>Continue Learning</h3>
+                <div class="progress-list" id="progressList">
+                    <!-- Progress items will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Students Say</h2>
+            <p class="section-subtitle">Join thousands of medical students advancing their stroke education</p>
+            <div class="testimonial-card" id="testimonialCard">
+                <!-- Testimonial content will be inserted here by JavaScript -->
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-btn" id="btnPrevTestimonial">‹</button>
+                <div class="testimonial-dots" id="testimonialDots"></div>
+                <button class="testimonial-btn" id="btnNextTestimonial">›</button>
+            </div>
+            <div class="stats-row">
+                <div class="stat-box">
+                    <div class="stat-number">5,000+</div>
+                    <div class="stat-text">Students Enrolled</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">4.9/5</div>
+                    <div class="stat-text">Average Rating</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-text">Pass Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reasons Section -->
+    <section class="reasons">
+        <div class="container">
+            <h2 class="section-title">Why Learn With StrokeAware?</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-icon">🎓</div>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from world-renowned neurologists and stroke specialists</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">📱</div>
+                    <h3>Learn Anywhere</h3>
+                    <p>Access courses on any device, anytime, anywhere</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">🎯</div>
+                    <h3>Practical Skills</h3>
+                    <p>Real-world case studies and hands-on learning</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">🏅</div>
+                    <h3>Certification</h3>
+                    <p>Earn recognized certificates for your achievements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-title">StrokeAware</h3>
+                    <p class="footer-text">Empowering medical students with comprehensive stroke education and awareness training.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="white"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Instructors</a></li>
+                        <li><a href="#">Certifications</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Student Guide</a></li>
+                        <li><a href="#">Research Papers</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li>✉️ support@strokeaware.edu</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 Medical Education Center<br>123 Health Street, Suite 456</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StrokeAware. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sign In Modal -->
+    <div class="modal" id="signInModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">×</button>
+            <h2 class="modal-title">Sign In</h2>
+            <form class="signin-form" id="signInForm">
+                <div class="form-group">
+                    <label for="signInEmail">Email</label>
+                    <input type="email" id="signInEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signInPassword">Password</label>
+                    <input type="password" id="signInPassword" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn-submit">Sign In</button>
+                <p class="form-footer">
+                    Don't have an account? <a href="#" class="link">Sign up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
